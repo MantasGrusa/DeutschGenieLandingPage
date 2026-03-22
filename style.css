@@ -448,3 +448,70 @@ nav {
   color: var(--accent);
   font-weight: 600;
 }
+
+/* ═══════════════════════════════════════════
+   CTA SECTION
+   ═══════════════════════════════════════════ */
+.cta-section {
+  background: var(--bg-mid);
+  padding: 7rem 6vw;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+ 
+.cta-section::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse 60% 70% at 50% 50%, rgba(13, 130, 196, 0.06) 0%, transparent 70%);
+  pointer-events: none;
+}
+ 
+.cta-section h2 {
+  font-family: 'Syne', sans-serif;
+  font-size: clamp(2rem, 5vw, 3.2rem);
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  max-width: 600px;
+  margin: 0 auto 1rem;
+  color: var(--text);
+}
+ 
+.cta-section p {
+  color: var(--muted);
+  margin-bottom: 2.5rem;
+}
+ 
+.store-badges {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 1.5rem;
+}
+ 
+.store-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.7rem 1.5rem;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  color: var(--text);
+  text-decoration: none;
+  font-size: 0.9rem;
+  box-shadow: var(--shadow);
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+ 
+.store-badge:hover {
+  border-color: var(--accent);
+  box-shadow: 0 6px 24px rgba(13, 130, 196, 0.15);
+}
+ 
+.store-badge svg {
+  color: var(--accent);
+}
+ 
