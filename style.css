@@ -233,3 +233,68 @@ nav {
   font-size: 0.8rem;
   color: var(--muted);
 }  
+/* ═══════════════════════════════════════════
+   SHARED SECTION STYLES
+   ═══════════════════════════════════════════ */
+.section {
+  padding: 6rem 6vw;
+}
+ 
+.section-label {
+  text-align: center;
+  font-family: 'Syne', sans-serif;
+  font-size: clamp(1.6rem, 3.5vw, 2.4rem);
+  font-weight: 800;
+  letter-spacing: -0.025em;
+  margin-bottom: 3rem;
+  color: var(--text);
+}
+ 
+ 
+/* ═══════════════════════════════════════════
+   PAIN POINTS
+   ═══════════════════════════════════════════ */
+.pain-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1rem;
+  max-width: 780px;
+  margin: 0 auto;
+}
+ 
+.pain-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.1rem 1.4rem;
+  display: flex;
+  align-items: center;
+  gap: 0.9rem;
+  box-shadow: var(--shadow);
+  transition: border-color 0.2s, transform 0.2s, box-shadow 0.2s;
+}
+ 
+.pain-card:hover {
+  border-color: rgba(13, 130, 196, 0.4);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 24px rgba(13, 130, 196, 0.15);
+}
+ 
+.pain-icon {
+  flex-shrink: 0;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: 1.5px solid var(--accent);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--accent);
+  font-size: 1rem;
+}
+ 
+.pain-card p {
+  font-size: 0.92rem;
+  color: var(--text);
+  font-weight: 400;
+}
