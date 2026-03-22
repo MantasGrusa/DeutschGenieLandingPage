@@ -514,4 +514,91 @@ nav {
 .store-badge svg {
   color: var(--accent);
 }
+/* ═══════════════════════════════════════════
+   FOOTER
+   ═══════════════════════════════════════════ */
+footer {
+  padding: 2.5rem 6vw;
+  border-top: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+  background: var(--bg-deep);
+}
  
+footer p {
+  font-size: 0.82rem;
+  color: var(--muted);
+}
+ 
+footer nav {
+  display: flex;
+  gap: 1.5rem;
+}
+ 
+footer a {
+  font-size: 0.82rem;
+  color: var(--muted);
+  text-decoration: none;
+}
+ 
+footer a:hover {
+  color: var(--accent);
+}
+ 
+ 
+/* ═══════════════════════════════════════════
+   ANIMATIONS
+   ═══════════════════════════════════════════ */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+ 
+@keyframes floatPiece {
+  0%   { transform: translateY(60px) rotate(0deg);   opacity: 0; }
+  10%  { opacity: 1; }
+  90%  { opacity: 1; }
+  100% { transform: translateY(-80px) rotate(45deg); opacity: 0; }
+}
+ 
+@keyframes growBar {
+  from { width: 0%; }
+  to   { width: 35%; }
+}
+ 
+.reveal {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+ 
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+ 
+ 
+/* ═══════════════════════════════════════════
+   RESPONSIVE
+   ═══════════════════════════════════════════ */
+@media (max-width: 640px) {
+  .how-grid {
+    grid-template-columns: 1fr;
+  }
+ 
+  .how-image-wrap {
+    grid-row: span 1;
+  }
+ 
+  .hero-stats {
+    gap: 1.5rem;
+  }
+ 
+  footer {
+    flex-direction: column;
+    text-align: center;
+  }
+}
