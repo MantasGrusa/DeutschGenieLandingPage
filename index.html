@@ -147,72 +147,106 @@
       </div>
  
     </section>
-     <!-- ═══════════════════════════════════════════
-         HOW IT WORKS
-    ═══════════════════════════════════════════ -->
-    <section class="how-section" aria-labelledby="how-heading">
-      <div class="how-inner">
- 
-        <h2 class="section-label reveal" id="how-heading">
-          Learn by Building — Not Memorizing
-        </h2>
- 
-        <div class="how-grid">
- 
-          <!-- Puzzle illustration -->
-          <div class="how-image-wrap reveal" aria-label="Puzzle illustration">
-            <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" fill="none" aria-hidden="true">
-              <rect x="20" y="20" width="70" height="70" rx="6" fill="rgba(91,207,234,0.08)" stroke="rgba(91,207,234,0.3)" stroke-width="1.5"/>
-              <rect x="110" y="20" width="70" height="70" rx="6" fill="rgba(91,207,234,0.05)" stroke="rgba(91,207,234,0.2)" stroke-width="1.5"/>
-              <rect x="20" y="110" width="70" height="70" rx="6" fill="rgba(91,207,234,0.05)" stroke="rgba(91,207,234,0.2)" stroke-width="1.5"/>
-              <rect x="110" y="110" width="70" height="70" rx="6" fill="rgba(91,207,234,0.12)" stroke="rgba(91,207,234,0.4)" stroke-width="1.5"/>
-              <circle cx="95" cy="55" r="10" fill="rgba(91,207,234,0.08)" stroke="rgba(91,207,234,0.3)" stroke-width="1.5"/>
-              <circle cx="55" cy="95" r="10" fill="rgba(91,207,234,0.08)" stroke="rgba(91,207,234,0.3)" stroke-width="1.5"/>
-              <circle cx="145" cy="95" r="10" fill="rgba(91,207,234,0.08)" stroke="rgba(91,207,234,0.3)" stroke-width="1.5"/>
-              <circle cx="145" cy="107" r="10" fill="rgba(91,207,234,0.12)" stroke="rgba(91,207,234,0.4)" stroke-width="1.5"/>
-              <text x="55" y="58" text-anchor="middle" fill="rgba(91,207,234,0.6)" font-size="9" font-family="DM Sans, sans-serif">Ich</text>
-              <text x="145" y="58" text-anchor="middle" fill="rgba(91,207,234,0.4)" font-size="9" font-family="DM Sans, sans-serif">lerne</text>
-              <text x="55" y="148" text-anchor="middle" fill="rgba(91,207,234,0.4)" font-size="9" font-family="DM Sans, sans-serif">gerne</text>
-              <text x="145" y="148" text-anchor="middle" fill="rgba(91,207,234,0.8)" font-size="9" font-family="DM Sans, sans-serif">Deutsch</text>
-            </svg>
-          </div>
- 
-          <!-- Step cards -->
-          <article class="step-card reveal">
-            <div class="step-num" aria-hidden="true">1</div>
-            <div class="step-text">
-              <strong>Read a real-life question</strong>
-              <p>Contextual prompts grounded in everyday German situations</p>
-            </div>
-          </article>
- 
-          <article class="step-card reveal">
-            <div class="step-num" aria-hidden="true">2</div>
-            <div class="step-text">
-              <strong>Choose the correct word pieces</strong>
-              <p>Pick from shuffled word tiles — no spelling required</p>
-            </div>
-          </article>
- 
-          <article class="step-card reveal" style="grid-column: 2;">
-            <div class="step-num" aria-hidden="true">3</div>
-            <div class="step-text">
-              <strong>Build your sentence</strong>
-              <p>Arrange pieces in the right order to form a correct German sentence</p>
-            </div>
-          </article>
- 
-          <article class="step-card reveal" style="grid-column: 2;">
-            <div class="step-num" aria-hidden="true">4</div>
-            <div class="step-text">
-              <strong>Get instant feedback</strong>
-              <p>Learn what's right, wrong, and why — immediately</p>
-            </div>
-          </article>
- 
+    <!-- ═══════════════════════════════════════════
+     HOW IT WORKS
+═══════════════════════════════════════════ -->
+<section class="how-section" aria-labelledby="how-heading">
+  <div class="how-inner">
+
+    <h2 class="section-label reveal" id="how-heading">
+      Learn by Building — Not Memorising
+    </h2>
+    <p class="how-sub reveal">Each exercise is a real puzzle. Here's one unfolding.</p>
+
+    <div class="how-grid">
+
+      <!-- Step 1: Situation -->
+      <article class="step-card reveal" aria-label="Step 1">
+        <div class="step-tag">
+          <span class="step-tag-num">1</span>
+          Read a real-life situation
         </div>
-      </div>
-    </section>
+        <div class="prompt-box">
+          <p class="prompt-label">Situation</p>
+          <p class="prompt-de">Du bist in einem Café ☕</p>
+          <p class="prompt-en">You're in a café. Order a coffee politely.</p>
+        </div>
+        <p class="step-desc">Contextual prompts grounded in everyday German life — no abstract drills.</p>
+      </article>
+
+      <!-- Step 2: Pick tiles -->
+      <article class="step-card reveal" aria-label="Step 2">
+        <div class="step-tag">
+          <span class="step-tag-num">2</span>
+          Tap the right word tiles
+        </div>
+        <div class="tiles-pool" aria-label="Word tile options">
+          <span class="tile tile-selected">Ich</span>
+          <span class="tile tile-idle">hätte</span>
+          <span class="tile tile-dim">werde</span>
+          <span class="tile tile-idle">gerne</span>
+          <span class="tile tile-dim">immer</span>
+          <span class="tile tile-idle">einen</span>
+          <span class="tile tile-idle">Kaffee</span>
+          <span class="tile tile-dim">Tee</span>
+          <span class="tile tile-idle">bitte</span>
+        </div>
+        <p class="step-desc">Pick from shuffled tiles — no typing, no spelling. Just meaning and structure.</p>
+      </article>
+
+      <!-- Step 3: Arrange -->
+      <article class="step-card reveal" aria-label="Step 3">
+        <div class="step-tag">
+          <span class="step-tag-num">3</span>
+          Arrange them in the right order
+        </div>
+        <div>
+          <p class="drop-label">Your sentence</p>
+          <div class="drop-zone" role="group" aria-label="Sentence drop zone">
+            <span class="tile tile-placed">Ich</span>
+            <span class="tile tile-placed">hätte</span>
+            <span class="tile tile-placed">gerne</span>
+            <span class="drop-slot" aria-hidden="true"></span>
+            <span class="drop-slot" aria-hidden="true"></span>
+          </div>
+        </div>
+        <p class="step-desc">Place pieces in position. German word order clicks through doing, not rules.</p>
+      </article>
+
+      <!-- Step 4: Feedback -->
+      <article class="step-card reveal" aria-label="Step 4">
+        <div class="step-tag">
+          <span class="step-tag-num">4</span>
+          Get instant, meaningful feedback
+        </div>
+        <div class="sentence-row" aria-label="Completed sentence with feedback">
+          <span class="tile tile-correct">Ich</span>
+          <span class="tile tile-correct">hätte</span>
+          <span class="tile tile-correct">gerne</span>
+          <span class="tile tile-correct">einen</span>
+          <span class="tile tile-wrong">Tee</span>
+          <span class="tile tile-correct">bitte</span>
+        </div>
+        <div class="feedback-banner" role="alert">
+          <span class="feedback-icon" aria-hidden="true">✗</span>
+          <div>
+            <strong>Almost — check the noun</strong>
+            <p>"Kaffee" fits here, not "Tee". Word order ✓ — just the wrong tile.</p>
+          </div>
+        </div>
+        <div class="puzzle-progress" aria-label="Puzzle 3 of 5">
+          <span class="prog-dot prog-done"></span>
+          <span class="prog-dot prog-done"></span>
+          <span class="prog-dot prog-active"></span>
+          <span class="prog-dot prog-pending"></span>
+          <span class="prog-dot prog-pending"></span>
+          <span class="prog-label">Puzzle 3 of 5</span>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
     <!-- ═══════════════════════════════════════════
          LEVEL SECTION
     ═══════════════════════════════════════════ -->
