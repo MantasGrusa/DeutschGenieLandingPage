@@ -248,44 +248,64 @@
   </div>
 </section>
     <!-- ═══════════════════════════════════════════
-         LEVEL SECTION
-    ═══════════════════════════════════════════ -->
-    <section class="level-section" aria-labelledby="level-heading">
-      <div class="level-inner">
- 
-        <h2 class="section-label reveal" id="level-heading">
-          Start at the Right Level
-        </h2>
- 
-        <p class="level-sub reveal">
-          Take a 5-minute placement test and get matched to the right difficulty.
-          No overwhelm. No boredom.
-        </p>
- 
-        <div class="level-card reveal" aria-label="Level indicator example">
-          <p class="level-label">Your Level</p>
-          <p class="level-display">A2 — Elementary</p>
-          <div
-            class="progress-track"
-            role="progressbar"
-            aria-valuenow="35"
-            aria-valuemin="0"
-            aria-valuemax="100"
-            aria-label="A2 level progress"
-          >
-            <div class="progress-fill"></div>
-          </div>
-          <div class="level-badges" aria-hidden="true">
-            <span class="level-badge">A1</span>
-            <span class="level-badge active">A2 ◀</span>
-            <span class="level-badge">B1</span>
-            <span class="level-badge">B2</span>
-            <span class="level-badge">C1</span>
+     LEVEL SECTION
+═══════════════════════════════════════════ -->
+<section class="level-section" aria-labelledby="level-heading">
+  <div class="level-inner">
+
+    <h2 class="section-label reveal" id="level-heading">
+      Start at the Right Level
+    </h2>
+    <p class="level-sub reveal">
+      Tell us where you think you are. We'll confirm it in minutes — and keep adjusting as you play.
+    </p>
+
+    <div class="level-card reveal" aria-label="Level calibration flow">
+
+      <div class="level-steps">
+        <div class="level-step">
+          <div class="level-step-circle" aria-hidden="true">1</div>
+          <div class="level-step-body">
+            <p class="level-step-title">Pick your level in the app</p>
+            <p class="level-step-desc">A1 through C1 — just your best guess.</p>
           </div>
         </div>
- 
+        <div class="level-step-connector" aria-hidden="true"></div>
+        <div class="level-step">
+          <div class="level-step-circle" aria-hidden="true">2</div>
+          <div class="level-step-body">
+            <p class="level-step-title">Solve a tutorial puzzle</p>
+            <p class="level-step-desc">One guided puzzle to show you how it works.</p>
+          </div>
+        </div>
+        <div class="level-step-connector" aria-hidden="true"></div>
+        <div class="level-step">
+          <div class="level-step-circle" aria-hidden="true">3</div>
+          <div class="level-step-body">
+            <p class="level-step-title">We calibrate from there</p>
+            <p class="level-step-desc">A few puzzles in, we know exactly where you belong. No stress — it keeps adjusting as you go.</p>
+          </div>
+        </div>
       </div>
-    </section>
+
+      <div class="level-display-row">
+        <p class="level-display">A2 — Elementary</p>
+        <span class="level-auto-badge">Auto-calibrated</span>
+      </div>
+      <div class="progress-track" role="progressbar" aria-valuenow="35" aria-valuemin="0" aria-valuemax="100" aria-label="A2 level progress">
+        <div class="progress-fill"></div>
+      </div>
+      <div class="level-badges" aria-hidden="true">
+        <span class="level-badge">A1</span>
+        <span class="level-badge active">A2 ◀</span>
+        <span class="level-badge">B1</span>
+        <span class="level-badge">B2</span>
+        <span class="level-badge">C1</span>
+      </div>
+
+    </div>
+  </div>
+</section>
      <!-- ═══════════════════════════════════════════
          CTA
     ═══════════════════════════════════════════ -->
