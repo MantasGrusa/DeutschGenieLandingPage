@@ -116,123 +116,109 @@ nav {
 .hero {
   min-height: calc(100vh - var(--nav-h));
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
-  text-align: center;
-  padding: 5rem 6vw 6rem;
+  gap: 4vw;
+  padding: 4rem 8vw;
+  background: var(--bg-deep);
   position: relative;
   overflow: hidden;
 }
  
-.hero::before {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background:
-    radial-gradient(ellipse 70% 60% at 50% 0%, rgba(13, 130, 196, 0.08) 0%, transparent 70%),
-    radial-gradient(ellipse 40% 40% at 80% 80%, rgba(13, 130, 196, 0.05) 0%, transparent 60%);
-  pointer-events: none;
+/* illustration — left column */
+.hero-illustration {
+  flex: 0 0 420px;
+  max-width: 460px;
+  width: 100%;
+  animation: fadeUp 0.8s ease both;
 }
  
-/* Floating puzzle pieces */
-.puzzle-bg {
-  position: absolute;
-  inset: 0;
-  pointer-events: none;
-  overflow: hidden;
+.hero-illustration svg {
+  width: 100%;
+  height: auto;
+  filter: drop-shadow(0 20px 60px rgba(13,130,196,0.12));
 }
  
-.puzzle-bg span {
-  position: absolute;
-  width: 40px;
-  height: 40px;
-  border: 1.5px solid rgba(13, 130, 196, 0.15);
-  border-radius: 4px;
-  animation: floatPiece linear infinite;
-  opacity: 0;
+/* text — right column */
+.hero-content {
+  flex: 1;
+  max-width: 520px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0;
 }
  
-.puzzle-bg span:nth-child(1) { left: 8%;  top: 20%; animation-duration: 14s; animation-delay: 0s;    width: 28px; height: 28px; }
-.puzzle-bg span:nth-child(2) { left: 18%; top: 60%; animation-duration: 18s; animation-delay: 2s;    width: 18px; height: 18px; }
-.puzzle-bg span:nth-child(3) { left: 78%; top: 15%; animation-duration: 16s; animation-delay: 1s;    width: 36px; height: 36px; }
-.puzzle-bg span:nth-child(4) { left: 88%; top: 55%; animation-duration: 20s; animation-delay: 3s;    width: 22px; height: 22px; }
-.puzzle-bg span:nth-child(5) { left: 55%; top: 80%; animation-duration: 12s; animation-delay: 0.5s;  width: 14px; height: 14px; }
- 
-.hero-eyebrow {
-  display: inline-block;
-  font-size: 0.78rem;
-  font-weight: 500;
-  letter-spacing: 0.18em;
-  text-transform: uppercase;
-  color: var(--accent);
-  background: rgba(13, 130, 196, 0.08);
-  border: 1px solid rgba(13, 130, 196, 0.2);
-  border-radius: 999px;
-  padding: 0.35rem 1rem;
-  margin-bottom: 1.5rem;
-  animation: fadeUp 0.7s ease both;
-}
- 
-.hero h1 {
+.hero-content h1 {
   font-family: 'Syne', sans-serif;
-  font-size: clamp(2.4rem, 6vw, 4rem);
+  font-size: clamp(2rem, 4vw, 3.2rem);
   font-weight: 800;
-  line-height: 1.1;
+  line-height: 1.15;
   letter-spacing: -0.03em;
-  max-width: 720px;
   color: var(--text);
-  animation: fadeUp 0.7s ease 0.1s both;
+  margin-bottom: 1.2rem;
+  animation: fadeUp 0.7s ease 0.05s both;
 }
  
-.hero h1 em {
+.hero-content h1 em {
   font-style: normal;
   color: var(--accent);
 }
  
 .hero-sub {
-  margin-top: 1.5rem;
   color: var(--muted);
-  font-size: 1.05rem;
-  max-width: 480px;
-  font-weight: 300;
-  animation: fadeUp 0.7s ease 0.2s both;
+  font-size: 1rem;
+  max-width: 440px;
+  font-weight: 400;
+  line-height: 1.7;
+  margin-bottom: 2rem;
+  animation: fadeUp 0.7s ease 0.15s both;
 }
  
 .hero-cta {
-  margin-top: 2.5rem;
-  animation: fadeUp 0.7s ease 0.3s both;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  width: 100%;
+  max-width: 380px;
+  margin-bottom: 2.5rem;
+  animation: fadeUp 0.7s ease 0.25s both;
 }
  
-.hero-cta .btn {
-  font-size: 1.05rem;
-  padding: 0.85rem 2.4rem;
+.btn-hero {
+  width: 100%;
+  font-size: 1rem;
+  padding: 0.9rem 1.5rem;
+  border-radius: 14px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  font-size: 0.9rem;
 }
  
 .hero-stats {
-  margin-top: 3.5rem;
   display: flex;
-  gap: 2.5rem;
-  justify-content: center;
-  animation: fadeUp 0.7s ease 0.4s both;
+  gap: 2rem;
+  animation: fadeUp 0.7s ease 0.35s both;
 }
  
 .hero-stat {
-  text-align: center;
+  text-align: left;
 }
  
 .hero-stat strong {
   display: block;
   font-family: 'Syne', sans-serif;
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   font-weight: 800;
   color: var(--accent);
 }
  
 .hero-stat span {
-  font-size: 0.8rem;
+  font-size: 0.78rem;
   color: var(--muted);
-}  
+}
 /* ═══════════════════════════════════════════
    SHARED SECTION STYLES
    ═══════════════════════════════════════════ */
@@ -584,6 +570,37 @@ footer a:hover {
 /* ═══════════════════════════════════════════
    RESPONSIVE
    ═══════════════════════════════════════════ */
+@media (max-width: 860px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    padding: 3rem 6vw 4rem;
+  }
+ 
+  .hero-illustration {
+    flex: none;
+    max-width: 280px;
+    margin: 0 auto;
+  }
+ 
+  .hero-content {
+    align-items: center;
+    max-width: 100%;
+  }
+ 
+  .hero-cta {
+    align-items: center;
+  }
+ 
+  .hero-stats {
+    justify-content: center;
+  }
+ 
+  .hero-stat {
+    text-align: center;
+  }
+}
+ 
 @media (max-width: 640px) {
   .how-grid {
     grid-template-columns: 1fr;
@@ -591,10 +608,6 @@ footer a:hover {
  
   .how-image-wrap {
     grid-row: span 1;
-  }
- 
-  .hero-stats {
-    gap: 1.5rem;
   }
  
   footer {
